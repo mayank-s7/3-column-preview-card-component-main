@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+--Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "Lexend Deca";
+    height: 100vh;
+    width: 100vw;
+
+    align-items: center;
+
+}
+
+.card{
+   background-color: aqua;
+   width: 62%;
+   height: 490px;
+   display: flex;
+   border-radius: 7px;
+   /* margin-top: 0px; */
+}
+
+.sub_card{
+    display: flex;
+    padding: 50px 50px 0px 50px;
+
+}
+
+.sub_card .desc {
+    display: flex;
+    flex-direction: column;
+
+}
+.sub_card h1{
+    font-family: "Big Shoulders Display";
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.sub_card p{
+    color: var(--Transparent-white-paragraphs);
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 60px;
+}
+
+.orange {
+   background-color: var(--Bright-orange);
+   border-radius: 6px 0px 0px 6px;
+}
+.blue{
+    background-color: var(--Dark-cyan);
+}
+
+.green{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0px 6px 6px 0px;
+}
+.btn{
+    border-radius: 140px;
+    height: 40px;
+    width: 150px;
+    border: none;
+
+}
+
+.btn_1{
+    color: var(--Bright-orange);
+}
+
+.btn_2{
+    color: var(--Dark-cyan);
+}
+
+
+.btn_3{
+    color: var(--Very-dark-cyan);
+}
+
+@media screen and (max-width:376px){
+    .card{
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        border-radius: 7px;
+        width: 88vw;
+     }
+
+    
+
+    .sub_card .desc {
+        display: flex;
+        flex-direction: column;
+
+    
+    } 
+    .sub_card p{
+        color: var(--Transparent-white-paragraphs);
+        margin-top: 30px;
+        font-size: 12px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    .btn{
+        margin-bottom: 36px;
+        height: 40px;
+        width: 110px;
+    }
+    .green{
+        background-color: var(--Very-dark-cyan);
+        border-radius: 0px 0px 6px 6px;
+    }
+    .orange {
+        background-color: var(--Bright-orange);
+        border-radius: 6px 6px 0px 0px;
+     }
+}
