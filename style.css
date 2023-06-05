@@ -94,6 +94,8 @@ body{
     color: var(--Very-dark-cyan);
 }
 
+/* responsiveness */
+
 @media screen and (max-width:376px){
     .card{
         background-color: aqua;
